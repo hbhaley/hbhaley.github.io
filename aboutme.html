@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" />
+<style>
+   body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+      text-align: left;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #F266A7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+ h1 {
+    margin: 0;
+    font-size: 3em;
+   padding: 20px;
+}
+
+h2 {
+    font-family: "Abril Fatface"
+       font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;  
+      margin: 5px 0 0;
+    font-size: 1.5em;
+  color: black; margin-bottom: 20px; 
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+ p { font-size:1.5em;
+    line-height: 1.5; 
+   
+}
+.text {
+    width: 30%;
+    margin-bottom: 20px; margin: 5px 0 0;
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 100%;
+    }
+}
+
+    
+        #photo-gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .polaroid {
+            position: relative;
+            margin: 0 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .polaroid:hover {
+            transform: translateY(-20px);
+        }
+
+        .polaroid img {
+            width: 100%;
+            border: 5px solid #fff;
+            border-radius: 10px;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .column {
+            width: 45%;
+        }
+
+        .hobbies {
+            margin-top: 50px;
+          margin-left:50px;
+            text-align: center;
+        }
+ .responsive-box {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F2F2F2;
+            border: 1px solid #DDD;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   font-size:1.5em;
+    line-height: 1.5;
+        }
+li {list-style-type:disc;}
+  footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #F266A7;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .responsive-box {
+                padding: 10px;
+            }
+        }
+       
+</style>
+</head>
+<body>
+<header>
+    <h1>I'm Hannah</h1>
+    </header>
+<div id="photo-gallery">
+    <div class="polaroid"><img src="https://hbhaley.github.io/hosted-assets/fuzzybee.png" alt="bee"></div>
+    <div class="polaroid"><img src="https://hbhaley.github.io/hosted-assets/sneks.png" alt="rainbow haired woman with snake"></div>
+  <div class="polaroid"><img src="https://hbhaley.github.io/hosted-assets/lula.png" alt="pink poodle"></div>
+    <div class="polaroid"><img src="https://hbhaley.github.io/hosted-assets/springtime.png" alt="woman smiling in front of crab apple tree"></div>
+    </div>
+ <header><h1>A passionate UX designer with a background<br> in Speech, Hearing, and Language Sciences. <br></h1><h2>With my love for aesthetic design and <br>a fascination for human communication, <br>I bring a fresh perspective to the UX landscape.</h2></header>
+<div class="columns">
+    <div class="column">
+        <h2>Who Am I?</h2>
+        <p>I've always had a knack for understanding how people communicate. My academic foundation has given me a unique lens through which I approach design. It's not just about pixels and wireframes for me; it's about creating experiences that speak to users.</p>
+    </div>
+    <div class="column">
+        <h2>My Design Philosophy</h2>
+        <p>My design philosophy centers around the idea that user experience should be as seamless as a well-orchestrated conversation. Clear communication is key in design. I'm dedicated to creating designs that not only look fantastic but are intuitive, effective, and engaging.</p>
+    </div>
+</div>
+      <header>
+        <h1>When I'm Not Designing, you can find me...</h1></header>
+  <div class="responsive-box">
+    <ul>
+        <li>Usually Hiking trails with my family near Boulder, CO. We always bring a picnic basket!</li>
+        <li>Or I might be scouring thrift stores and estate sales to find the perfect mid-century dress.</li>
+        <li>I love transforming my home with a myriad of DIY interior design projects, including sewing curtains, refinishing furniture, or painting intricate patterns on the walls.</li>
+        <li>Getting big doses of dopamine by spending time with my small zoo - my twelve adorable pets!</li>
+        <li>I'm often tending to my pollinator garden, wearing a comically large sunhat.</li>
+        <li>You can count on finding me enjoying a cup of coffee (or three!)</li>
+        <li>If that fails, I'm probably listening to vinyl records, combing the bins of a record store or seeing live music.</li>
+    </ul>
+</div> 
+</section>
+  <footer>
+    <p>&copy; 2023 Hannah - All rights reserved</p>
+</footer>
+
+</body>
+</html>
