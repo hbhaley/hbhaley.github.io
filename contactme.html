@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+<style>
+    .navbar {
+            background-color: #E9D7DE;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .nav-link {
+          display: flex;  
+          text-decoration: none;
+            color: black;
+           font-family: Objektiv Mk1, sans-serif; 
+            font-weight: bold;
+          font-size:18px;
+            padding: 15px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            background-color: #F266A7;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+        }
+
+body {
+    font-family:'special elite', 'Courier New', Courier, monospace; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.linkedin {
+    margin-bottom: 20px;
+}
+
+.linkedin img {
+    width: 40px;
+    height: 40px;
+}
+
+.typewriter-box {
+    background-color: #E9D7DE;
+    border: 2px solid #999;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {  
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #605D5E;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #D64587;
+}
+
+    </style>
+</head>
+ 
+<body>
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutme.html" class="nav-link">About Me</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="myprojects.html" class="nav-link">My Projects</a>
+    </div>
+<div class="contact-container">
+    <div class="linkedin">
+        <a href="https://www.linkedin.com/in/hannahb-haley/" target="_blank">
+            <img src="https://hbhaley.github.io/hosted-assets/linkedin_3536569.png" alt="LinkedIn Icon">
+        </a>
+    </div>
+    <div class="typewriter-box">
+        <h1>Contact Me</h1>
+        <form action="#" method="post">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+<script>
+    function sendEmail() {
+        window.location.href = "mailto:hbhaley@gmail.com" subject=Message from your website";
+    }
+</script>
+</body>
+</html>
