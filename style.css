@@ -36,6 +36,8 @@ body {
 
 .grid-container {
     display: grid;
+    height: 50%;
+    height: 50%;
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
@@ -44,6 +46,7 @@ body {
 .grid-item {
     display: flex;
     flex-direction: column;
+    
 }
 
 .text-block {
@@ -53,17 +56,17 @@ body {
 
 h1 {
     font-family: 'Sketchnote Square Regular', cursive; color: #F266A7;
-    margin: 0; font-size:8vw;
+    margin: 0; font-size:6em;
 }
 
 h2 {
     font-family: 'Museo Slab', serif;
-    margin: 0; font-size:8vw;
+    margin: 0; font-size:5em;
 }
 
 .image {
-    width: 60%;
-    height: auto;
+    width: 40%;
+    height: 40%;
     padding: 15px;
 }
 
