@@ -1,3 +1,4 @@
+html { font-size: 16px; font-size: 100%;}
 .navbar {
     background-color: #E9D7DE;
     display: flex;
@@ -12,7 +13,7 @@
     color: black;
    font-family: Objektiv Mk1, sans-serif; 
     font-weight: bold;
-  font-size:18px;
+  font-size: 16px; font-size: 1rem;
     padding: 15px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -24,52 +25,72 @@
 @media (min-width: 768px) {
     .navbar {
         display: none;
-    }
-}
+    }}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        height: 100vw;
+    }
+    .text-container, .image-container {
+        width: 100%;
+        overflow: hidden;
+    }
+  .text-container {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-.grid-container {
-    display: grid;
-    height: 50%;
-    height: 50%;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+.text-container h1 {
+    margin: 0;
+    
 }
-
-.grid-item {
-    display: flex;
-    flex-direction: column;
+.text-container h2 {
+    margin: 10px 0;
     
 }
 
-.text-block {
-    padding: 15px;
-    background-color: #f2f2f2;
+.image-container {
+    background-color: #D4E6F1;
 }
 
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 h1 {
-    font-family: 'Sketchnote Square Regular', cursive; color: #F266A7;
-    margin: 0; font-size:6em;
-}
+    color: #F266A7;
+    text-align: left;
+    font-family: sketchnote square, verdana;
+    font-size: 20px; font-size: 1.4rem; 
+  }
+  
+  h2 {
+    text-align: left;
+    font-family: museo slab, courier;
+    font-size: 18px; font-size: 1.2rem; 
+  }
+  @media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 
-h2 {
-    font-family: 'Museo Slab', serif;
-    margin: 0; font-size:5em;
+    .text-container, .image-container {
+        height: 50vh;
+    }
 }
-
-.image {
-    width: 40%;
-    height: 40%;
-    padding: 15px;
-}
-
 /* Media Queries */
 @media screen and (min-width: 600px) {
     .grid-container {
@@ -81,7 +102,7 @@ h2 {
     }
 
     .text-block {
-        flex: 1;
+        flex: 1; font-size: 1rem;
         margin-right: 20px;
     }
 }
