@@ -27,40 +27,68 @@ html { font-size: 16px; font-size: 100%;}
         display: none;
     }}
       
-body {
-        font-family: 'Sketchnote Square Regular', verdana;
+    body {
+        background-color: #FDFAFD;
         margin: 0;
         padding: 0;
-        background-color: #FDFAFD;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        
+    }
+
+.text-container {
+  width: 600px;
+  height:300px;
+  padding: 40px;} 
+
+.image-container {
+        width: 600px;
+        height:300px;
+    }
+
+    .text-container {
+        text-align: left;
+        padding: 20px;
+      margin-top: 40px;  
+      margin-left: 40px;
+        box-sizing: border-box;
     }
     h1 {
-        color: #F266A7;
-        text-align: left;
-        font-family: 'Sketchnote Square Regular', verdana;
-        font-size: 2rem;
-      }
-      
-      h2 {
-        text-align: left;
-        font-family: museo slab, courier;
-        font-size: 1.7rem;
-      }
-      
-      .grid {
-        display: grid;
-        gap: 3rem;
-      }
-      
-      .grid.two {
-        grid-template-columns:  1fr max-content;
-        margin: 3rem 1rem;
-      }
-      .grid.two img{
-        max-width: 600px;
-        height:300px;
-      }
-     
+  font-family: 'Sketchnote Square Regular', verdana;   
+      font-size: 48px; font-size: 3rem;
+      color: #F266A7;
+}
 
+   h2 {
+     font-family: Museo Slab, 
+       font-size: 32px; font-size: 2rem;
+}
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .text-container, .image-container {
+            height: 50vh;
+        }
+        h1 {font-size: 1.2rem;
+        }
+        h2 {font-size: 1rem;
+        }
+    }
 /* Media Queries */
 @media screen and (min-width: 600px) {
     .grid-container {
