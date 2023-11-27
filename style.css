@@ -26,71 +26,41 @@ html { font-size: 16px; font-size: 100%;}
     .navbar {
         display: none;
     }}
-
+      
 body {
-        font-family: Arial, sans-serif;
+        font-family: 'Sketchnote Square Regular', verdana;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        background-color: #FDFAFD;
     }
-    .grid-container {
+    h1 {
+        color: #F266A7;
+        text-align: left;
+        font-family: 'Sketchnote Square Regular', verdana;
+        font-size: 2rem;
+      }
+      
+      h2 {
+        text-align: left;
+        font-family: museo slab, courier;
+        font-size: 1.7rem;
+      }
+      
+      .grid {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px;
-        height: 100vw;
-    }
-    .text-container, .image-container {
-        width: 100%;
-        overflow: hidden;
-    }
-  .text-container {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
+        gap: 3rem;
+      }
+      
+      .grid.two {
+        grid-template-columns:  1fr max-content;
+        margin: 3rem 1rem;
+      }
+      .grid.two img{
+        max-width: 600px;
+        height:300px;
+      }
+     
 
-.text-container h1 {
-    margin: 0;
-    
-}
-.text-container h2 {
-    margin: 10px 0;
-    
-}
-
-.image-container {
-    background-color: #D4E6F1;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-h1 {
-    color: #F266A7;
-    text-align: left;
-    font-family: sketchnote square, verdana;
-    font-size: 20px; font-size: 1.4rem; 
-  }
-  
-  h2 {
-    text-align: left;
-    font-family: museo slab, courier;
-    font-size: 18px; font-size: 1.2rem; 
-  }
-  @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .text-container, .image-container {
-        height: 50vh;
-    }
-}
 /* Media Queries */
 @media screen and (min-width: 600px) {
     .grid-container {
