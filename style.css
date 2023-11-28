@@ -76,6 +76,8 @@ h2 {
         .text-container, .image-container {
                 height: 50vh; 
             }
+        .image-container {
+            padding-left: 20px; padding-right: 20px;
         }
         h1 {font-size: 1.2rem;
         }
