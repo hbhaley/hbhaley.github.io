@@ -53,13 +53,13 @@ body {
       
     .text-container  h1 {
         font-family: 'Sketchnote Square Regular', verdana;   
-        font-size: 51.2px; 
+        font-size: 64px; 
         color: #F266A7;
       }
       
      .text-container h2 {
-        font-family: Museo Slab, 
-        font-size: 48px; 
+        font-family: 'Objektiv Mk1', sans-serif;
+        font-size: 64px; 
             
       } 
     .image-container img {
