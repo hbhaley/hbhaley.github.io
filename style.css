@@ -59,7 +59,7 @@ body {
       
      .text-container h2 {
         font-family: 'Objektiv Mk1', sans-serif; 
-        font-size: 64px; 
+        font-size: 58px; 
             
       } 
     .image-container img {
@@ -76,7 +76,7 @@ body {
             }
 }
 
-@media screen and (min-width: 768px) {  
+@media screen and (max-width: 768px) {  
          .text-container h1 {
             font-size: 18px;
         }
