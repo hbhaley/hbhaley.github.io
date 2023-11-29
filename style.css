@@ -49,15 +49,15 @@ body {
       
      .text-container  h1 {
         font-family: 'Sketchnote Square Regular', verdana;   
-        font-size: 64px; 
+        font-size: 98px; 
         color: #F266A7;
       }
       
      .text-container h2 {
-        font-family: 'Objektiv Mk1', sans-serif; 
-        font-size: 56px; 
+        font-family: 'Museo Slab', sans-serif; 
+        font-size: 72px; 
+      }
             
-      } 
     .image-container img {
         width: 100%;
       }
@@ -74,10 +74,10 @@ body {
 
 @media screen and (max-width: 768px) {  
          .text-container h1 {
-            font-size: 18px;
+            font-size: 20px;
         }
         .text-container h2 {
-            font-size: 16px;
+            font-size: 18px;
         }
         .image-container {
             padding-left: 20px; padding-right: 20px;
