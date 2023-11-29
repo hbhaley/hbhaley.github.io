@@ -41,17 +41,13 @@ body {
     }
     .text-container {
         padding-left: 20px;
-    }
-
-
-    .text-container {
         background-color: #FDFAFD;
         text-align: left;
         margin-left: 20px;;
         box-sizing: border-box;
     }
       
-    .text-container  h1 {
+     .text-container  h1 {
         font-family: 'Sketchnote Square Regular', verdana;   
         font-size: 64px; 
         color: #F266A7;
@@ -59,7 +55,7 @@ body {
       
      .text-container h2 {
         font-family: 'Objektiv Mk1', sans-serif; 
-        font-size: 58px; 
+        font-size: 56px; 
             
       } 
     .image-container img {
