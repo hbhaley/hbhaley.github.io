@@ -58,7 +58,7 @@ body {
       }
       
      .text-container h2 {
-        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        font-family: 'Objektiv Mk1', sans-serif; 
         font-size: 64px; 
             
       } 
@@ -66,16 +66,18 @@ body {
         width: 100%;
       }
       
-      @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
         .grid-container {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
         }
-       
         .text-container, .image-container {
                 height: 50vh; 
             }
-        .text-container h1 {
+}
+
+@media screen and (min-width: 768px) {  
+         .text-container h1 {
             font-size: 18px;
         }
         .text-container h2 {
@@ -84,7 +86,7 @@ body {
         .image-container {
             padding-left: 20px; padding-right: 20px;
          } 
-        }
+}
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
